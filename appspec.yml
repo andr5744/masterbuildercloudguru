@@ -2,15 +2,15 @@ version: 0.0
 os: linux
 
 files:
-  - source: files/index.html
+  - source: files/app
     destination: /var/www/html
 
 permissions:
   - object: /var/www/html
-    pattern: index.html
+    pattern: files/app
     mode: 755
     type:
-      - file
+      - directory
 
 hooks:
   BeforeInstall:
